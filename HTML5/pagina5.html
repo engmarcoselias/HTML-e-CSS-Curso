@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de video</title>
+</head>
+<body>
+    <li><a href="index.php">HOME</a></li>
+    <h1>Pagina para teste de videos</h1>
+
+    <p>Video 1 local forma simples</p>
+    <video src="midia/video/video1.mp4" controls width="300"></video> <!--forma simples com width=500 para diminuir o video de tamanho para a tela não o tamanho do arquivo-->
+
+    <p>Video 1 local (forma correta para varios tipos de navegadores)</p>
+
+    <video controls width="300" poster="#"><!--parametro poster e para colocar capa no video-->
+        <source src="midia/video/video1.mp4" type="video/mp4">
+        <source src="midia/video/video1.m4v" type="video/mp4">
+        <source src="midia/video/video1.webm" type="video/webm">
+        <source src="midia/video/video1.ogg" type="video/ogg"> <!--Sempre levando em consideração a sequencia a ser reproduzida dentro da teg video-->
+    </video>
+        <p>Video externo </p><!--video externo copiado do youtube na aba compartilhar metodo idela não consome pacote para hospedagem-->
+
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/uzUDMGDQBuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
+
+</body>
+</html>

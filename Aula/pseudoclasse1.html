@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /*Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado.(especificada por ":") Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.*/
+        .cl1{
+            display: inline-block;
+            background-color: lightgray;
+            border:1px solid black ;
+            text-align: center;
+            height: 200px; /*altura*/
+            width:200px ;/*largura*/
+        }
+        .cl1:hover{
+            background-color: blueviolet;
+        }
+        #d4 > p{ /* siguinifica que o paragrafo que estiver dentro da div vai receber estes atributos simbolo > = filho*/
+            display: none; /*não mostrar*/
+        }
+        #d4:hover{
+            color: red;
+        }
+        #d4:hover > p{
+            display: block;/*mostrar*/
+            color: white;
+            background-color: red;
+            width: 165px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="seletores1.html">Voltar</a> <a href="pseudoclasse2.html">Pseudo-classe</a></p>
+    <h1>Seletors personalizados</h1>
+    <div id="d1" class="cl1">01</div>
+    <div id="d2" class="cl1">02</div>
+    <div id="d3" class="cl1">03</div>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="d4">Passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+    <P>Fim do exemplo.</P>
+</body>
+</html>

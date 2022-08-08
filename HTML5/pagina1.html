@@ -1,0 +1,73 @@
+
+<!--Aula 25 curso em video-->
+
+<!--Obs. para envelpar algum texto atalho CTRL + SHIFT + P seleciona abb e a tag a ser usada-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Para fazer com que a pagina abra inteira em qualquer dispositivo 1:1-->
+	<link rel = "shortcut icon" type = "imagem/x-icon" href = "imagens/home.ico"/> <!--Adicionar icone a pagina href = (local do icone)-->
+	<title>Aula HTML Projeto automação</title>
+	<style>
+		.data1{
+			font-weight: 900;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body style="background-color:rgb(200, 255, 237) ;">
+	<h1 style="color:brown ; font-size: 2em;">Projeto Automação css em linha</h1>
+	<!--exemplo de estilo em linha no css parametro style-->
+	<hr><!-- cria uma linha horizontal-->
+	<h2>Qual o projeto?</h2>
+	
+	<p>Projeto destinado a automação com acesso a a plataforma web.</p>
+	<h2>Como vai funcionar?</h2>
+	<p>Projeto vai controlar um arduino a principio para acionamento de modulos rele via wifi.<br><!--quebra de linha--> O projeto será controlados por uma plataforma web. &#x1F440;</p><!--Codigo para emogi-->
+	<img src="imagens\casainteligente.png" alt="Logo casa Inteligente"> <!--Adiciona imagem a pagina parametro alt e o texto alternativo que aparece se a imagem não carregar-->
+
+	<h3>Aplicações do sistema</h3>
+	<p style="font-family:Arial, Helvetica, sans-serif ; text-align: justify;" >Lorem ipsum dolor texto sobrescrito x<sup>2</sup> texto subescrito h<sub>2</sub>o. 
+	Voluptatem inventore <mark>corporis optio dolor asperiores </mark> <!--marca texto-->
+	dignissimos quos saepe <ins>texto sublinhado </ins>sit animi
+	non earum excepturi <small>texto pequeno</small> <del>texto riscado</del>.
+	Eius.</p><!-- usar teg lorem para criar texto aleatorio-->
+	<p>
+	Endereço: <address>Rua artur candido de oliveira, nº2100 Ap 2</address> <!--tranforma o texto em endereço semantico-->
+    </p>
+	<p>O sistema composto por<strong> alguns equipamentos</strong></p> <!--negrito-->
+	<p>Citação : <q>Fulano de tal disse que o mundo e redondo</q><!--citação-->.</p>
+	<p>
+		<em>
+			Arduino Uno<br><!--italico-->
+			ESP8266<br>
+		</em>
+	</p>
+	<h3>O código</h3>
+	<p><code>WiFiEspServer server(80)</code></p><!--para adicionar codigo espaçamento igual dos caracteres-->
+	<pre> <!--codigo com identação com espaçamento mantido igual no interpretador-->
+		<code>
+num = int(imput("Digite um numero"))<!--tirar os espaços de tudo ao mesmo tempo SHIFT + TAB ou TAB-->
+if num == 2:
+	print("Acertou")
+else:
+	print("Não acertou")
+print("Fim do Programa")
+		</code>
+	</pre>
+	<p><blockquote cite="https://www.amazon.com.br/Endurance-Caroline-Alexander/dp/8571648808/ref=asc_df_8571648808/?tag=googleshopp00-20&linkCode=df0&hvadid=379773616958&hvpos=&hvnetw=g&hvrand=7799281932897250540&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100602&hvtargid=pla-396354809971&psc=1">
+		Dias terríveis, dias deslumbrantes.Em <span class="data1">1914</span> o Endurance partiu rumo à Antártica.
+		O gelo e o mar do Pólo Sul lentamente o tragaram
+	</blockquote></p><!-- citação em bloco fica deslocada com parametro cite.... A tag span e para poder utilizar comandos no meio do texto-->
+
+	<p>Comando para abreviação <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p> <!--tag paa abreviar nomes quando o mouse passa em cima mostra o que siguinifica a sigla-->
+	<li><a href="index.php" rel="prev">Home</a></li> <!--link entre duas paginas internas .. neste caso o rel indicapar aqual pagina direcionar  e prev e para pagina anterior-->
+	<li><a href="Pagina2.html">Donwload</a></li>
+
+
+
+
+
+</body>
+</html>

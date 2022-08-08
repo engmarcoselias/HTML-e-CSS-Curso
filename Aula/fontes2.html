@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Peso e Estilo</title>
+    <style>
+        /* font-face e para importar fonte baixada*/
+        @font-face {
+            font-family: 'Seven Segment';
+            src: url('font/Seven Segment.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format:
+            - opentype(otf)
+            - truetype(ttf)
+            - embedded(opentype)
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */            
+        }
+        
+        body{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: normal;/*pode se colocar numeros de 100-900 e lighter, normal, bold, bolder*/      
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            font-style: italic;          
+        }
+        h2{
+            font: italic bolder 1.5em 'Work Sans sans',sans-serif;/* shorthand(uma mãosinha) vai juntar os 4 parametros em um. Ordem: font-style--font-weight--font-size--font-family obdecer a ordem pode retirar algum parametro */
+        }
+
+
+    </style>
+</head>
+<body>
+    <p><a href="fontes1.html">Voltar</a> <a href="fontes3.html">Fontes 3</a></p>
+    <h1>Fontes: peso e estilo </h1> <!--Não pode ser utilixada fontes simples-->
+
+    <!--weight(peso), width(largura), height(altura)-->
+
+    <h2>Shorthand Exemplo no titulo 2</h2>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, consequatur dolore! Laborum quae sit, voluptas velit pariatur quibusdam nihil ipsum cum eligendi iure placeat itaque a quisquam quaerat nemo corporis!
+    </p>
+    <h2>Exemplo de fonte externa adicionada do <a href="https://fonts.google.com/specimen/Sedgwick+Ave+Display?query=display#standard-styles" target="_blank" rel="external">Goggle Fontes</a></h2>
+
+    <p style="font-family: 'Sedgwick Ave Display', cursive;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsa debitis vel itaque blanditiis enim perferendis aliquid quasi laborum mollitia consequatur magni, minima culpa laboriosam, eius vero fuga, vitae eaque.</p>
+    <h2>Fonte externa baixada</h2>
+    <p style= "font-family: 'Seven Segment';">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum fugiat rem in provident numquam quaerat quod, laborum dolores hic, nam similique quas fugit atque quam inventore quos porro aliquid!
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo fontes e tamanhos</title>
+    <style>
+        h1{
+            font-family:'Times New Roman', Times, serif;
+        }
+        body{
+            font-family:sans-serif ; /*conbinação segura mais de uma fonte para que o dispositivo tente executar com alguma na sequencia serif, sans-serif e monoespace são nome genericos */
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="cores4.html">Voltar</a> <a href="fontes2.html"> Fontes 2</a> </p>
+
+    <h1>Categoria de fontes</h1>
+
+    <img src="imagem/categoriafontes.png" width="400px" alt="Categoria de fontes">
+
+    <h2 style="font-size: 20px;">Tamanho fonte 1</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil dicta voluptatum nostrum cumque, optio consectetur pariatur, accusantium officia ratione placeat quia voluptate quisquam enim velit voluptates, vero error fugiat.
+    </p>
+    <!--Existem medidas absolutas e relativas
+        Absolutas: cm, mm, in(polegada), px, pt(ponto), pc(paica)..rpoblema com diferença de telas(cm, mm, px)
+        
+        Relativas: em(tamanho atual da fonte m maisculo), ex
+        
+        (relativo a letra x), rem(relativo ao rute a fonte configurada no body), vw(referente a largura da viewport "tela":tamanho da tela do dispositivo %) vh( altura da viewport) -->
+
+        <!--Para tamanho de fonte e recomendado utilizar "px" e "em"-->
+
+        <!--16px = 1 em "geralmente(tamanho natural da fonte)-->
+
+    <h2 style="font-size: 16px;">Tamanho fonte 2</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam odit doloribus nam dignissimos eum accusantium placeat et delectus alias officia. Numquam reiciendis qui nulla in suscipit corporis laudantium dolor eius.
+    </p>
+    <h2 style="font-size: 1em;">Tamanho fonte 3</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quod, nostrum ratione dolorem animi non possimus omnis quaerat aperiam reprehenderit commodi sapiente veniam, cupiditate error molestias. Voluptatum, qui quam.
+    </p>
+
+    
+</body>
+</html>

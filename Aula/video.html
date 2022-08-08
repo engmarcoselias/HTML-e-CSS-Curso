@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Video</title>
+    <style>
+        .video1{
+            background-color: aquamarine;
+            margin-bottom: 30px;
+            margin: 0px -20px 0px -20px;
+            padding: 20px;
+            padding-bottom: 56.5%;
+            position: relative;
+        }
+        div.video1 > iframe{
+            position: absolute; /*quando se coloca position absoluto podemos editar top e left*/
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo video Configurar</h1>
+        <nav>
+            <a href="../HTML5/index.php">Inicio</a>
+            <a href="tabela.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/fieqge7aYJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </section>
+        <aside>
+        </aside>
+    </main>    
+</body>
+</html>

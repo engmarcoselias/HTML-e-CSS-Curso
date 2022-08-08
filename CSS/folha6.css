@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h1{
+    background-color: aqua;
+    width: 430px;
+    border: 10px solid rebeccapurple;/*simplificando shorthand.. width, style, color*/
+    padding: 10px 10px 10px 10px; /* simplificando pading..top, right, bottom, left*/
+    margin: 10px 10px 10px 10px;
+}
+h2{
+    display: inline;
+    background-color: aqua;
+    width: 430px;
+    border: 10px solid rebeccapurple;/*simplificando shorthand.. width, style, color*/
+    padding: 10px 10px 10px 10px; /* simplificando pading..top, right, bottom, left*/
+    margin: 10px 10px 10px 10px; 
+}

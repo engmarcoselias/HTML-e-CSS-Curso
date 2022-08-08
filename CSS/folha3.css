@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*  Tudo que em HTML é id em CSS é #
+    Tudo que em HTML  class em CSS é .
+*/
+html, body{
+    height: 100%;
+    background-image: linear-gradient(to top,#5cb7db52 50%, #e4fa3e33);
+    font:normal bold 1em 'Arial,sans-serif';  
+}
+h1#principal{/*o simbolo # e para demostrar o identificador*/
+    text-align: center;
+    background-color: #016992;
+    color: white;
+}
+#segundo{/* o identificador não precisa ser expecificado pode-se colocar so o # e o nome*/
+    color:#016992;
+}
+#terceiro{
+    color:#041d27dc ;
+}
+h1{
+    color: #194916;
+}
+.teste2{/* a classe não precisa ser expecificado pode-se colocar so o . e o nome*/
+    color: #89990ed0;
+}
+.teste3{
+    color:#5d6afc6e ;
+    font-weight: bolder;
+}
+h2{
+    color: #046340;
+}
+.destaque{
+    background-color: #04634034;
+}

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body{
+    font-family: 'Courier New', Courier, monospace; 
+}
+.link1{
+    text-decoration: none;
+    color: black;
+}
+.link1:hover{
+    color: white;   
+}
+.link2{
+    text-decoration: none;
+    color: black;
+}
+.link2:hover{
+    color: white;
+}   
+div:hover{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+ol{
+    list-style-type: none;  
+}
+div{
+    background-image: linear-gradient(to top,#E1CE63,  #DBBF1F, #5c54284d);
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    font: italic bolder 1em Arial ;
+    width: 65px;
+} 
+.clic:active{/*pseudo-classe*/
+    background-image: linear-gradient(to top, black,black,black);
+}
+.link2::after{/*pseudo-elemento*/
+    content: '☚';/*after siguinifica depois e content significa conteudo*/
+}
+#d3{
+    background-image: linear-gradient(to top,#E1CE63,  #DBBF1F, #5c54284d);
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    font: italic bolder 1em Arial ;
+    width: 165px;
+}
+.link3{
+    text-decoration: none;
+    color: black;
+}
+.link3:hover{
+    color: white;
+}
+

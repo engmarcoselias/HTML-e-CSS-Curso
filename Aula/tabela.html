@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo tabela aside</title>
+    <style>
+        aside{
+            background-color: rgba(241, 193, 102, 0.658);
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.253);
+        }
+        aside  h3{
+            background-color: rgb(102, 68, 6);
+            color: white;
+            margin: 20px 0px -10px 0px;
+        }
+        aside > ul{
+            columns: 2;
+            list-style-type: "\2714";/*Colocar barra invertida no codigo do emoji*/
+            padding: 20px 40px;
+            list-style-position: inside;/*marcador para o lado de dentro*/
+        }
+        a{
+            text-decoration: none;
+        }
+        .externo::after{
+            content: "\00A0\1F517";/*A contentpropriedade é usada com os pseudoelementos ::before e ::after , para inserir o conteúdo gerado.*/
+
+            /*o comando \00A0 e para adiconar espaço*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabela Dentro de aside com edição de coluna</h1>
+        <nav>
+            <a href="../HTML5/index.php">Inicio</a>
+            <a href="video.html">Video</a>
+            <a href="responsividade.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+        </section>
+        <aside>
+            <h3>Lista Duas Colunas</h3>
+            <ul>
+                <li><a href="#" class="externo">Segunda</a></li>
+                <li>Terça</li>
+                <li>Quarta</li>
+                <li>Quinta</li>
+                <li>Sexta</li>
+                <li>Sabado</li>
+                <li>Domingo</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <P>Desenvolvido por Automa Engênharia</P>
+    </footer>
+</body>
+</html>
