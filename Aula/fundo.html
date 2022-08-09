@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens de Fundo</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.493);
+        }
+        .quadrado{
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        #q1{
+            background-color: aqua;
+        }
+        #q2{
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        #q3{
+            background-image: url("imagem/img2/pattern003.png");
+        }
+        #q4{
+            background-image: url(imagem/img2/pattern001.png);
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Plano de fundo com imagem</h1>
+        <nav>
+            <a href="tabela.html">Voltar</a>
+            <a href="../HTML5/index.php">Inicio</a>
+        </nav>
+        <main>
+            <div class="quadrado" id="q1">
+            </div>
+            <div class="quadrado" id="q2">
+            </div>
+            <div class="quadrado" id="q3">
+            </div>
+            <div class="quadrado" id="q4">
+            </div>
+        </main>
+        <footer>
+            <p>Desenvolvido por Automa Engênharia &#174;</p>
+        </footer>
+    </header>
     
 </body>
 </html>
