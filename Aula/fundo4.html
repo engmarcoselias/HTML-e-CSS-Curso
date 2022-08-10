@@ -6,25 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionamento 3</title>
     <style>
+        body{
+            height: 100vh;
+            /*---------------------------------*/
+            /*background-color: black;
+            background-image: url(imagem/img2/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;*/
+            /*----------------------------------*/
+            /*valores background-size:border: border: - auto- contain- valor em px - cover*/
+            /*contain exibe 100% da imagem mais aparece barras pretas na altura e na largura conforme aumenta e diminui*/
+            /*cover preenche 100% da viewport*/
+            /*----------------------------------*/
+            background-attachment: fixed ;
+            /* attachment siguinifica vinculo e tem duas opções o scroll que o fundo rola junto com o conteudo e fixed o fundo fica fixo*/
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment....OBS tem que tirar o cover....*/
+            /*------------------------------------*/
+            background: black url(imagem/img2/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        header > h1{
+            color: aqua;
+            text-shadow: -2px 5px 9px aqua;
+        }
+        nav{
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+            
+        }
         a{
-            padding: 5px;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        a:hover{
+            background-color: rgba(0, 255, 255, 0.534);
+            color: black;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: rgba(0, 255, 255, 0.623);
+            border-radius: 5px;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Posicionamento 3</h1>
+        <h1>Posicionamento Imagem fundo  e vinculo</h1>
         <nav>
             <a href="../HTML5/index.php">Inicio</a>
             <a href="#">Posicionamento 3</a>
+            <a href="fundo5.html">Posicionamento caixas</a>
             <a href="fundo3.html">Voltar</a>
         </nav>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum cumque iure sit doloremque pariatur exercitationem libero nostrum incidunt asperiores rerum rem temporibus odit, deserunt consequatur hic eaque recusandae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam fugit qui dignissimos aliquam distinctio magnam. Quaerat voluptatibus dignissimos provident ab velit, expedita nam, temporibus natus dolorum cupiditate adipisci quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis non eaque, culpa laudantium porro quibusdam. Alias praesentium omnis voluptates obcaecati placeat deleniti dicta laudantium officia? Nihil error similique accusantium.</p>
     </main>
     <footer>
-        <p>Desenvolvido por Automa Engênharia</p>
+        <p>Desenvolvido por Automa Engênharia &#174;</p>
     </footer>   
 </body>
 </html>

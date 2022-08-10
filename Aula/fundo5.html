@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical caixas</title>
+    <style>
+        body{
+        }
+        a{
+            padding: 5px;
+        }
+        /*-------------------------------------------*/
+        /*quando coloco position absoluto em um elemento posso configurar o left e o top*/
+        /*-------------------------------------------*/
+        #container{
+            background-image: url(imagem/img2/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 77vh;
+            background-color: purple;
+            padding: 10px;
+        }
+        #conteudo{
+            background-image: url(imagem/img2/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);/*A função CSS translate() reposiciona um elemento na direção horizontal e/ou vertical. O seu resultado é um tipo de dado <transform-function>.
+            E sta transformação é caracterizada por um vetor bidimensional. Suas coordenadas definem o quanto o elemento se move em cada direção.*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Centralização de fundo de caixas</h1>
+        <nav>
+            <a href="../HTML5/index.php">Inicio</a>
+            <a href="#">Aula</a>
+            <a href="fundo4.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Automa Engênharia</p>
+    </footer>    
+</body>
+</html>
