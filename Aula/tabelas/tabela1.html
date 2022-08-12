@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            padding-bottom: 20px;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;/*collapse retirar espaço entre as bordas*/
+            text-align: center;
+            border: 5px solid pink;
+        }
+        td{
+            border: 1px solid black;
+        }
+        .trgray{
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+        .tdcor{
+            background-color: greenyellow;
+        }
+        /*não e necessario fechar as tags tr e td mas os elementos tem que estra na ierarquia correta*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Primeira tabela</h1>
+        <nav>
+            <a href="tabela2.html">Tabela 2</a>
+        </nav>
+    </header>
+    <main>
+        <!--Ierarquia de tabela simple:
+        Table = tabela
+            table row = linha 
+                tale header= cabeçalho
+                table data = dado de tabela-->
+        <table>
+            <tr ><!--primeira linha-->
+                <td>A1</td><!--dado da tabela-->
+                <td>B1</td>
+                <td>C2</td>
+            </tr>
+            <tr class="trgray"><!-- ex de tabela sem fechar tags-->
+                <td>A2
+                <td>B2
+                <td>C2
+            <tr>
+                <td>A3</td>
+                <td class="tdcor">B3</td>
+                <td>C3</td>
+            </tr>
+            <tr class="trgray">
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </main>    
+</body>
+</html>
