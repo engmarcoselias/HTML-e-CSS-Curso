@@ -20,6 +20,12 @@
             border-collapse: collapse;
             
         }
+        caption{
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.315);
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -53,6 +59,7 @@
         <!--
             ANATOMIA PARA TABELAS GRANDES
             TABLE
+                CAPTION = LEGENDA
                 THEAD
                 TR, TD, TH
                 TBODY
@@ -61,10 +68,11 @@
                 TR, TD, TH
         -->
         <table>
+            <caption>População das unidades federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>                    
+                    <th scope="col">Estado</th><!--scope= col titulo na mesma cooluna-->
+                    <th scope="col">População</th>                    
                 </tr>
             </thead>
             <tbody>
@@ -99,7 +107,7 @@
 
             </tbody>
             <tfoot>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th><!--titulo na mesma linha-->
                 <td><strong>0000</strong></td>
             </tfoot>
         </table>
