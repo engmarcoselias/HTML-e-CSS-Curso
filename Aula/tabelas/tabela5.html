@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav > a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        table{
+            text-align: center;
+            width: 300px;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        th, td, caption{
+            border: 1px solid black;
+        }
+        caption{
+            border-collapse: collapse;
+            background-color: rgba(255, 0, 140, 0.589);
+        }
+        thead{
+            background-color: rgba(255, 0, 0, 0.555);
+        }
+        .nome{
+            background-color: rgba(255, 255, 0, 0.281);
+        }
+        .sexo{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudos de tabela Agrupar colunas</h1>
+        <nav>
+            <a href="tabela1.html">Inicio</a>
+            <a href="tabela4.html">Voltar</a>
+            <a href="tabela6.html">Tabela 6</a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <colgroup><!--tag para agrupar colunas tera um <col para cada coluna-->
+                <col class="nome">
+                <col class="sexo" span="2"><!--posso aplicar span no colgroup so colocando span-->
+                <col class="idade">
+            </colgroup>
+            <caption>
+                Tabela 5
+            </caption>            
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Mara</td>
+                    <td>F</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>M</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>M</td>
+                    <td>67</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>    
+</body>
+</html>
