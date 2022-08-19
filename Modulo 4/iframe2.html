@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2 iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav > a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste Iframe 2</h1>
+        <nav>
+            <a href="iframe1.html">Inicio</a>
+            <a href="iframe4.html">Pagina 3</a>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit dolore corporis doloribus natus ex inventore esse error dicta iusto, dignissimos deserunt reprehenderit atque qui. Quidem porro vel quibusdam blanditiis.</p>
+
+        <ul>
+            <li><a href="../Aula/Modulo 3/tabela6.html" target="frame">Primeira Pagina</a></li><!--target apontando para o iframe-->
+            <li><a href="../Aula/cores1.html" target="frame">Segunda Pagina</a></li>
+            <li><a href="../Aula/fontes2.html" target="frame">Terceira Pagina</a></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, pariatur? Ea blanditiis eius quasi soluta veritatis officia repellendus. Ratione voluptatum repellat magnam, molestiae aliquid tempora corporis neque asperiores reiciendis praesentium?</p>
+        <iframe id="tela" name="frame" srcdoc="<h1>Preenchendo o iframe com srcdoc que aceita HTML</h1><p>Colocar aspas simples em caso de tag que contenham aspas duplas</p><img src='../Aula/imagem/kisspng-computer-icons-clip-art-icon-instagram-5b396cec202ce2.0007229515304900921318.jpg'>" frameborder="0"> <!--O name atributo especifica um nome para um elemento HTML no exemplo do iframe e usado para envio de um formulario atraves do target ="nome do elemento"-->
+            <p>Este dispositivo não suporta Iframe</p>           
+        </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio repellendus unde nisi officiis error doloremque laboriosam quis recusandae nesciunt beatae velit, eius consectetur nostrum ut mollitia accusamus facere quo.</p>
+    </main>    
+</body>
+</html>

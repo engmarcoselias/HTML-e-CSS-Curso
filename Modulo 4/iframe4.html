@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Cadastro</title>
+    <style>
+        nav > a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        iframe{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iframe cadastro</h1>
+        <nav>
+            <a href="iframe1.html">Inicio</a>
+            <a href="iframe5.html">Pagina 5</a>
+            <a href="iframe6.html">Pagina 6</a>
+            <a href="iframe3.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nesciunt omnis deleniti, eveniet ullam quidem et, dolores maxime, alias repellendus possimus maiores qui ipsa quia tempora laborum dolorum totam nemo!</p>
+        <h2>Formulario Bloqueado por segurança</h2>
+        <iframe src="iframe3.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"><!--o atributo sandbox dentro do iframe bloqueia qualquer requisição feita não captura informações-->
+            <!--referrerpolicy="no-referrer deixar o iframe mais seguro-->
+            <p>Seu navegador não e compativel com iframe</p>
+
+        </iframe>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus qui, assumenda, doloribus accusamus est recusandae sed delectus repellat enim possimus cupiditate aut ullam, obcaecati illum dignissimos non excepturi sit accusantium.</p>
+        <h2>Formulario liberado para cadastro</h2>
+        <iframe src="iframe3.html" frameborder="0" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+    </main>
+</body>
+</html>
