@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2 Metodo de Envio</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav >a{
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        main{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Metodo GET ou POST</h1><!--para envio com methodo GET os dados do formulario não pode ultrapassar 3kb 3000 letras e nem pode conter  imagens, e dados sensiveis tipo senhas e dados de cartão-->
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="formulario3.html">Pagina 2</a>
+        </nav>
+    </header>
+    <main>
+        <!--Para formulario em HTML existe dois methodos de envio de formulario method GET e POST-->
+        <form action="cadastro.php" method="POST">
+            <p>
+                <label for="nome">Nome: </label><input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="sobrenome">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+            <!--Para ver os dados enviados no metodo POST inspeciona elemento network, arquivo, e payloads-->
+        </form>
+    </main>   
+</body>
+</html>

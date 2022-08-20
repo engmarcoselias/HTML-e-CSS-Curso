@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario 3</h1>
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="">Pagina 3</a>
+            <a href="formulario2.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <form action="Cadastro.php" method="post" autocomplete="on"><!--O autocomplite dentro do forme so tem opção on e off se ele for usado nos inputs tem as opções para cada input..lembrando que ele tem que estar ativado no form-->
+            <p>
+                <label for="usu">Usuário:</label> <input type="text" name="usu" id="usu" required size="11" placeholder="Nome do Usuário" autocomplete="username"><!--O size e para o tamanho que a caixa vaificar quantidade de caracteres que vai mostrar....O placeholder e para colocar um texto dentro da caixa-->
+            </p>
+            <p>
+                <label for="senha">Senha:</label> <input type="password" name="senha" id="senha" required minlength="8" maxlength="10" size="2" placeholder="Senha" autocomplete="current-password"><!--Os atributos minlenggth e maxlength são para definir a quantidade de caracteres-->
+            </p>
+            <!--O atributo required serve para que quado ouver um dado para ser preenchido ele seja obrigatorio antes de enviar o formulario-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>  
+</body>
+</html>

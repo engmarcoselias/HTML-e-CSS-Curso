@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav > a{text-decoration: none;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario 1</h1>
+        <nav>
+            <a href="formulario2.html">Proxima Página</a>
+        </nav>
+    </header>
+    <main>
+        <!--Todo formulario tem que estar entre a tag form e bara /form-->
+        <form action="cadastro.php" autocomplete="off"><!--autocomplete e para preencher dados automaticos autocompletar --><!--o parametro action e para onde sera enviado o formulario ex: um arquivo PHP-->
+
+            <!--Diferença de 'name' e 'id': o name e mais util para a linguagem PHP e para HTML, o id para o Javascript e para label(etiquetas)-->
+            <p>
+                <label for="name">Nome:</label> <input type="text" name="nome" id="name">
+            </p>
+            <!--o for no label siguinifica para quem é a etiqueta, a quem se associa o texto da caixa (utilizar o id)-->
+            <p>
+                <label for="sobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="sobrenome">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>    
+</body>
+</html>
