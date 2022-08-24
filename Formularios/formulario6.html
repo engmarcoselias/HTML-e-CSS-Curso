@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 6</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario 6 Check-box</h1>
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="formulario7.html">Pagina 6</a>
+            <a href="formulario5.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <input type="radio" name="sexo" id="masc" checked value="M"> <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+                <!--Para o input radio funcionar na hora de marcar e desmarcar corretamente o name precisa ser igual-->
+                <!--Para aparecer uma checkbox ja marcado usar o parametro checked-->    
+            </fieldset>
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esp1" id="esp1"><label for="esp1">Basquete</label><br>
+                <input type="checkbox" name="esp2" id="esp2"><label for="esp2">Natação</label><br>
+                <input type="checkbox" name="esp3" id="esp3"><label for="esp3">Futebol</label>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 7</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario 7</h1>
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="#">Pagina 7</a>
+            <a href="formulario6.html">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <p>
+                    <label for="cor">Cor:</label><input type="color" name="cor" id="cor" value="#00ff00">
+                </p>
+                <p>
+                    <label for="nivel">Nivel de satisfação:</label><input type="range" name="nivel" id="nivel" min="1" max="10" value="0">
+                </p>
+                <p>
+                   <label for="img">Foto do Perfil: </label><input type="file" name="img" id="img"><!--Para usar input com parametro file o metodo tem que ser post para enviar o arquivo-->
+                </p>               
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>    
+</body>
+</html>

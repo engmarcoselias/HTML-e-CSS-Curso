@@ -1,4 +1,6 @@
 # Capitulo 4
-Video 21
+Video 26
 
-OBS.visual estudo para adiantar codigo apertar tecla TAB
+-OBS.visual estudo para adiantar codigo apertar tecla TAB
+
+-Estudar RegEx
