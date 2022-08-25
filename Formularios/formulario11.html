@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplo da tag Output</h1>
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="#">Pagina 11</a>
+            <a href="formulario10.html">Voltar</a>
+        </nav>
+    </header> 
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="ano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="ano" min="1900" max="2020" oninput="calcidade()">
+            </p>
+            <label for="idade"> Sua Idade é:</label>
+            <output id="idade">0</output>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <script>
+            function calcidade(){
+                let atual = new Date().getFullYear()
+                idade.innerHTML = Number(atual) - Number(ano.value)
+            }
+        </script>
+    </main>   
+</body>
+</html>

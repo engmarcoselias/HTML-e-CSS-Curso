@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplo da tag Output</h1>
+        <nav>
+            <a href="formulario1.html">Inicio</a>
+            <a href="formulario11.html">Pagina 10</a>
+            <a href="formulario9.html">Voltar</a>
+        </nav>
+    </header> 
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="n3">Numero:</label>
+                <input type="range" name="n3" id="n3" min="0" max="10" value="0" oninput="ival.innerHTML = Number(n3.value)"><output id="ival">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>   
+</body>
+</html>
