@@ -1,1 +1,5 @@
 @charset "UTF-8";
+/*MODO PAISAGEM LANDSCAPE*/
+body{
+    background-color: orange;
+}
