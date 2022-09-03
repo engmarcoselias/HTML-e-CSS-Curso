@@ -1,5 +1,7 @@
 # Capitulo 4
-Video 33
+Video 38
+
+tempo 8:48
 
 -OBS.visual estudo para adiantar codigo apertar tecla TAB
 
