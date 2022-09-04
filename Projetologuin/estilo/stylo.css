@@ -46,3 +46,14 @@ main{
     display: block;
     padding: 10px;
 }
+#dados{
+    padding: 10px;
+}
+#botoes{
+    padding: 30px;
+    text-align: center;
+}
+#botoes > p{
+    text-align: center;
+    padding: 10px;
+}
